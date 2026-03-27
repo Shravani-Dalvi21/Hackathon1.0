@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yahoo! Finance</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header */
+  header {
+    background-color: #7200cc;
+    color: white;
+    padding: 10px 15px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  /* Navbar */
+  nav {
+    background-color: #f3f3f3;
+    padding: 10px 15px;
+  }
+  nav a {
+    color: blue;
+    text-decoration: underline;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  nav a.active {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Main content */
+  .content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .finance-section h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+
+  ol {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  li a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Yahoo! Finance</h1>
+</header>
+
+
+<div class="content">
+
+  <!-- Market News -->
+  <div class="finance-section">
+    <h2>Market News</h2>
+    <ol>
+      <li><a href="#">Dow Jones rises 200 points</a></li>
+      <li><a href="#">Nasdaq hits new record</a></li>
+      <li><a href="#">Global markets react to economic data</a></li>
+      <li><a href="#">Federal Reserve announces interest rate changes</a></li>
+      <li><a href="#">Energy stocks lead gains</a></li>
+    </ol>
+  </div>
+
+  <!-- Stock Updates -->
+  <div class="finance-section">
+    <h2>Stock Updates</h2>
+    <ol>
+      <li><a href="#">Apple Inc. stock soars</a></li>
+      <li><a href="#">Microsoft quarterly earnings report</a></li>
+      <li><a href="#">Tesla shares dip after news</a></li>
+      <li><a href="#">Google stock trends</a></li>
+      <li><a href="#">Amazon hits all-time high</a></li>
+    </ol>
+  </div>
+
+  <!-- Investment Tips -->
+  <div class="finance-section">
+    <h2>Investment Tips</h2>
+    <ol>
+      <li><a href="#">Top 5 dividend stocks to watch</a></li>
+      <li><a href="#">How to start investing in 2005</a></li>
+      <li><a href="#">Retirement portfolio strategies</a></li>
+      <li><a href="#">Mutual funds vs stocks</a></li>
+      <li><a href="#">Risk management tips for beginners</a></li>
+    </ol>
+  </div>
+
+  <!-- Currency Rates -->
+  <div class="finance-section">
+    <h2>Currency Rates</h2>
+    <ol>
+      <li><a href="#">USD to EUR: 0.85</a></li>
+      <li><a href="#">USD to GBP: 0.75</a></li>
+      <li><a href="#">USD to JPY: 110.50</a></li>
+      <li><a href="#">USD to INR: 64.00</a></li>
+      <li><a href="#">USD to AUD: 1.30</a></li>
+    </ol>
+  </div>
+
+</div>
+
+</body>
+</html>

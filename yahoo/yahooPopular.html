@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yahoo! Most Popular</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header */
+  header {
+    background-color: #7200cc;
+    color: white;
+    padding: 10px 15px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  /* Navbar */
+  nav {
+    background-color: #f3f3f3;
+    padding: 10px 15px;
+  }
+  nav a {
+    color: blue;
+    text-decoration: underline;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  nav a.active {
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /* Main content */
+  .content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .popular-section h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+
+  ol {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  li a {
+    color: blue;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Yahoo! Most Popular</h1>
+</header>
+
+
+<div class="content">
+
+  <!-- Trending Searches -->
+  <div class="popular-section">
+    <h2>Trending Searches</h2>
+    <ol>
+      <li><a href="#">New iPhone launch rumors</a></li>
+      <li><a href="#">Celebrity wedding news</a></li>
+      <li><a href="#">Oscars 2005 winners</a></li>
+      <li><a href="#">Top movies this week</a></li>
+      <li><a href="#">Weather alerts</a></li>
+      <li><a href="#">Stock market updates</a></li>
+      <li><a href="#">Tech gadget reviews</a></li>
+      <li><a href="#">Travel deals</a></li>
+      <li><a href="#">Popular TV shows</a></li>
+      <li><a href="#">Sports highlights</a></li>
+    </ol>
+  </div>
+
+  <!-- Entertainment -->
+  <div class="popular-section">
+    <h2>Entertainment</h2>
+    <ol>
+      <li><a href="#">Top music videos</a></li>
+      <li><a href="#">Celebrity interviews</a></li>
+      <li><a href="#">Box office hits</a></li>
+      <li><a href="#">Fashion trends</a></li>
+      <li><a href="#">New movie trailers</a></li>
+    </ol>
+  </div>
+
+  <!-- Sports -->
+  <div class="popular-section">
+    <h2>Sports</h2>
+    <ol>
+      <li><a href="#">Football scores</a></li>
+      <li><a href="#">Basketball highlights</a></li>
+      <li><a href="#">Tennis updates</a></li>
+      <li><a href="#">Olympics news</a></li>
+      <li><a href="#">Local matches</a></li>
+    </ol>
+  </div>
+
+  <!-- Finance -->
+  <div class="popular-section">
+    <h2>Finance</h2>
+    <ol>
+      <li><a href="#">Stock market today</a></li>
+      <li><a href="#">Top performing companies</a></li>
+      <li><a href="#">Investment tips</a></li>
+      <li><a href="#">Currency exchange rates</a></li>
+      <li><a href="#">Real estate updates</a></li>
+    </ol>
+  </div>
+
+</div>
+
+</body>
+</html>

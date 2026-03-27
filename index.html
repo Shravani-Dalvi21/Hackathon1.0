@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ARPANET Terminal</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- GRID -->
+<div class="gridOverlay" id="grid"></div>
+
+<!-- SLIDE 1 -->
+<div class="section">
+<div class="screen">
+    <div id="title" class="line"></div>
+    <div class="dots" id="dots"></div>
+    <div class="menu" id="menu"></div>
+</div>
+</div>
+
+<!-- SLIDE 2 -->
+<div class="section">
+<div class="mailScreen">
+    <div class="mailContent" id="mailContent"></div>
+</div>
+</div>
+
+<!-- SLIDE 3 -->
+<div class="section">
+<div class="wwwScreen">
+    <!-- CONTENT -->
+    <div class="wwwContent">
+        <h1>World Wide Web</h1>
+
+        <p>The WorldWideWeb (W3) is a wide-area hypermedia information retrieval initiative.</p>
+
+        <p>Everything there is online about W3 is linked directly or indirectly to this document.</p>
+
+        <p><a href="#">What's out there?</a></p>
+
+        <p>Pointers to the world's online information.</p>
+
+         <p><a href="#">Help</a></p>
+
+        <p>On the browser you are using</p>
+
+         <p><a href="#">Software products</a></p>
+
+        <p>A list of w3 project componentsand their current states</p>
+
+
+         <p><a href="#">People</a></p>
+
+        <p>A list of some people involved in the project</p>
+
+         <p><a href="#">bibliography</a></p>
+
+        <p>Paper documentation on w3 and references</p>
+    </div>
+</div>
+</div>
+
+<!-- SLIDE 4 - DOT-COM BOOM & CRASH -->
+<div class="section dotcomScreen" id="dotcomScreen">
+    <!-- TOP -->
+    <div class="dotcomMarquee">
+        <marquee>🔥 Welcome to Yahoo! – Dot-Com Boom Era 🔥</marquee>
+    </div>
+
+    <div class="dotcomBox">
+        <h1>Yahoo!</h1>
+        <input type="text" placeholder="Search the Web...">
+        <button>Search</button>
+        <div class="yahoo-container">
+        <ul class="yahoo-ul" id="yahoo-directory">
+            <li class="yahoo-li"><a><b>Computers and Internet</b><i> - WWW, Software</i></a></li>
+            <li class="yahoo-li"><a href="./yahoo/yahooFinance.html"><b>Business and Economy </b><i>- Investments, Classifieds</i></a></li>
+            <li class="yahoo-li"><a><b>Education</b><i> - Universities, K-12 Courses</i></a></li>
+            <li class="yahoo-li"><a href="./yahoo/yahooPopular.html"><b>Entertainment </b><i>- TV, Movies, Music</i></a></li>
+            <li class="yahoo-li"><a><b>Government</b><i> - Politics, Law, Military</i></a></li>
+            <li class="yahoo-li"><a href="./yahoo/yahooNews.html"><b>News </b><i>- Current Events</i></a></li>
+            
+        </ul>
+    </div>
+    </div>
+
+    <!-- BOOM SECTION -->
+    <div id="boomSection" class="dotcomBox">
+        <h2 class="dotcomHype">🚀 DOT-COM BOOM</h2>
+
+        <p class="dotcomFlash">🔥 IPO BOOM! Everyone is investing!</p>
+        <p class="dotcomFlash">💰 Get Rich Fast with Internet Startups!</p>
+
+        <p>Stock Price: <span id="stockValue">100</span> 📈</p>
+
+        <button onclick="startCrash()">💥 Bubble Burst</button>
+
+        <ul>
+            <li class="dotcomPop"><a href="#">Pets.com</a> <span class="dotcomNew">NEW!</span></li>
+            <li class="dotcomPop"><a href="#">Webvan</a> <span class="dotcomNew">NEW!</span></li>
+            <li class="dotcomPop"><a href="#">eToys</a> <span class="dotcomNew">NEW!</span></li>
+        </ul>
+    </div>
+
+    <!-- CRASH SECTION -->
+    <div id="crashSection" class="dotcomBox" style="display:none;">
+        <h2>💀 DOT-COM CRASH</h2>
+
+        <p>📉 Market Collapse... Investors Panic</p>
+
+        <p>Stock Price: 5 📉</p>
+
+        <ul>
+            <li><a href="#">Pets.com</a> ❌ Bankrupt</li>
+            <li><a href="#">Webvan</a> ❌ Closed</li>
+            <li><a href="#">eToys</a> ❌ Failed</li>
+        </ul>
+
+        <p class="dotcomFlash">⚠️ Server Error... Bubble Burst!</p>
+    </div>
+</div>
+
+<!-- LOGIN SCREEN -->
+<div id="loginPage">
+    <div class="loginBox">
+        <h1>facebook</h1>
+        <input type="text" id="username" placeholder="Email or Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Log In</button>
+    </div>
+</div>
+
+<!-- MAIN FACEBOOK UI -->
+<div id="mainPage" class="facebookScreen">
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h2>facebook</h2>
+        
+    </div>
+
+    <div class="container">
+
+        <!-- LEFT SIDEBAR -->
+        <div class="sidebar">
+            <p><b>Welcome, <span id="userDisplay"></span></b></p>
+            <ul>
+                <li>News Feed</li>
+                <li>Messages</li>
+                <li>Friends</li>
+                <li>Profile</li>
+            </ul>
+        </div>
+
+        <!-- FEED -->
+        <div class="feed">
+
+            <!-- POST BOX -->
+            <div class="postBox">
+                <textarea id="postInput" placeholder="What's on your mind?"></textarea>
+                <button onclick="addPost()">Post</button>
+            </div>
+
+            <!-- POSTS -->
+            <div id="posts"></div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- SLIDE 6 - MOBILE ERA -->
+<div class="section mobileScreen">
+
+    <div class="phone">
+
+        <!-- STATUS BAR -->
+        <div class="statusBar">
+            <span>9:41</span>
+
+            <div style="display:flex;align-items:center;gap:6px;">
+                <span>4G</span>
+                <div class="signal">
+                    <div></div><div></div><div></div><div></div>
+                </div>
+                <span>🔋</span>
+            </div>
+        </div>
+
+        <!-- SCREEN -->
+        <div class="phoneDisplay" id="phoneDisplay">
+
+            <div class="webText">
+                🌐 Websites → 📱 Apps Revolution
+            </div>
+
+            <div class="apps" id="apps">
+                <div class="app">📘<p>Facebook</p></div>
+                <div class="app">📸<p>Instagram</p></div><br>
+                <div class="app">💬<p>WhatsApp</p></div>
+                <div class="app">▶️<p>YouTube</p></div><br>
+                <div class="app">🔍<p>Google</p></div>
+                <div class="app">📧<p>Gmail</p></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- SLIDE 7 - CHATGPT -->
+<div class="section mobileScreen">
+
+    <div class="phone">
+    <div class="chatscreen">
+
+        <div class="header">ChatGPT</div>
+
+        <div class="chat" id="chat"></div>
+
+        <div class="suggestions">
+            <div onclick="quickAsk('What is AI?')">What is AI?</div>
+            <div onclick="quickAsk('Explain internet evolution')">Internet evolution</div>
+            <div onclick="quickAsk('Future of technology')">Future tech</div>
+        </div>
+
+        <div class="inputArea">
+            <input id="userInput" placeholder="Ask anything...">
+            <button onclick="sendMsg()">Send</button>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+
+<!-- SLIDE 8 - WEB3 BLOCKCHAIN -->
+<div class="section web3Screen">
+    <div class="web3Matrix"></div>
+    
+    <!-- POWER SHIFT MESSAGE -->
+    <div class="powerFlow web2Bank">🏦 WEB2 → POWERED BY COMPANIES</div>
+    <div class="powerFlow web3User">👤 WEB3 → USER EMPOWERED</div>
+    
+    <!-- CANVAS FOR DYNAMIC BLOCKCHAIN -->
+    <canvas class="blockchainCanvas" id="blockchainCanvas"></canvas>
+    
+    <!-- STATIC ELEMENTS -->
+    <div class="bitcoinLogo" style="top: 10%; left: 20%;">₿</div>
+    <div class="bitcoinLogo" style="top: 70%; right: 20%; animation-direction: reverse;">₿</div>
+    
+    <!-- TRANSPARENCY GLASS -->
+    <div class="transparencyGlass" style="top: 60%; left: 10%;">
+        <div>🔒 FULL TRANSPARENCY</div>
+        <div>📊 EVERY TX VISIBLE</div>
+        <div>✅ DECENTRALIZED</div>
+        <div>Secure</div>
+    </div>
+    
+    <!-- FLYING TRANSACTIONS -->
+    <div class="transactionAnim" style="animation-delay: 0s;">💸 TX: 0.25 BTC → Alice</div>
+    <div class="transactionAnim" style="animation-delay: 1s;">🔄 Smart Contract Deployed</div>
+    <div class="transactionAnim" style="animation-delay: 2s;">⚡ Gas: 21,000 | Block: #8456721</div>
+</div>
+<audio id="typingSound"
+src="https://www.orangefreesounds.com/wp-content/uploads/2016/09/Typing-sound-effect-keyboard.mp3"
+preload="auto"></audio>
+
+<script src="main.js"></script>
+</body>
+</html>
